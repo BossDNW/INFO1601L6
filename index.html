@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>INFO1601 Lab 6</title>
+        <style>
+
+        </style>
+    </head>
+    <body>
+        <input type="button" value="alert" onclick="alertFun()">
+        <input type="button" value="confirm" onclick="confirmFun()">
+        <input type="button" value="prompt" onclick="promptFun()">
+        <script>
+            function alertFun(){
+                alert("Hello !");
+            }
+
+            function confirmFun(){
+                let didConfirm = confirm("Are you sure about that?");
+                if(didConfirm){
+                alert("You confirmed :)");
+                }else{
+                alert("You did not confirm :(");
+                }
+            }
+
+            function promptFun(){
+                let val = prompt("What is your name?");
+                alert(`You've entered: ${val}`);
+            }
+        </script>
+    </body>
+</html>
